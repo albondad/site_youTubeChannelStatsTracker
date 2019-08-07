@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--META TAGS-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--JAVASCRIPT-->
+
+
+</head>
+
+<body class="bg-black01">
+    <section class="p-0">
+        <div id="loading" class="d-flex justify-content-center align-items-center foWeight-100 foSize-3em foColor-white01 p-0">
+            LOADING...
+        </div>
+    </section>
+    <!--SEARCH SECTION-->
+    <section id="searchSection">
+        <div class="mt-5 d-flex justify-content-center">
+            <div class="container-fluid addChannelForm">
+                    <div class="row foColor-gray01 foSize-2em">ADD CHANNEL</div>
+                    <div class="row mt-3">
+                        <div class="dropdown w-100">
+                            <button class="btn dropdown-toggle w-100 d-flex align-items-center" type="button" id="searchByFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Search By
+                                </button>
+                            <div class="dropdown-menu" aria-labelledby="searchByFilter">
+                                <a id="lnk_byChannelName" class="dropdown-item" href="#">By Channel Name</a>
+                                <a id="lnk_byChannelID" class="dropdown-item" href="#">By Channel ID</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <input id="inp_search" class="w-100" placeholder="channel name"></input>
+                    </div>
+                    <div class="row mt-3">
+                        <button id="btn_submit" class="btn w-100 d-flex justify-content-center">SUBMIT</button>
+                    </div>
+                    <div id="errors" class="row d-flex justify-content-center align-itmes-center mt-3 foColor-red01 foSize-1_5em">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--STATISITICS SECTION-->
+    <section id="statistics" class="pb-5">
+
+
+        <!--<canvas id="myChart" class="w-50 h-50"></canvas>-->
+    </section>
+
+    <!--JAVASCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

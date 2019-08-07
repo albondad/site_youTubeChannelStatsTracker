@@ -1,0 +1,195 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
+
+/*COLORS*/
+/*
+#2F2E2A - black0101
+#956074 - red0101
+*/
+
+
+/*INITIAL*/
+:root {
+    --white01: #FFFEFE;
+    --black01: #343434;
+    --black02: #212121;
+    --gray01: #999999;
+    --gray02: #3F3F3F;
+    --red01: #CC6666;
+}
+
+* {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1em;
+}
+
+/*HEIGHT*/
+.h-10em {
+    height: 5em;
+}
+
+
+/*FONTS*/
+/*font sizes*/
+.foSize-_5em {
+    font-size: .5em;
+}
+.foSize-1em {
+    font-size: 1em;
+}
+.foSize-1_25em {
+    font-size: 1.25em;
+}
+.foSize-1_5em {
+    font-size: 1.5em;
+}
+.foSize-1_75em {
+    font-size: 1.75em;
+}
+.foSize-2em {
+    font-size: 2em;
+}
+.foSize-2_5em {
+    font-size: 2.5em;
+}
+.foSize-3em {
+    font-size: 3em;
+}
+/*font weight*/
+.foWeight-100 {
+    font-weight: 100;
+}
+.foWeight-300 {
+    font-weight: 300;
+}
+.foWeight-400 {
+    font-weight: 400;
+}
+.foWeight-700 {
+    font-weight: 700;
+}
+/*font color*/
+.foColor-white01 {
+    color: var(--white01);
+}
+.foColor-gray01 {
+    color: var(--gray01);
+}
+.foColor-red01 {
+    color: var(--red01);
+}
+
+/*LINE HEIGHTS*/
+.lineh-1_25em {
+    line-height: 1.25em;
+}
+.lineh-2_5em {
+    line-height: 2.5em;
+}
+
+/*BACKGROUND COLORS*/
+.bg-black01 {
+    background-color: var(--black01)
+}
+.bg-black02 {
+    background-color: var(--black02)
+}
+.bg-gray01 {
+    background-color: var(--gray01)
+}
+.bg-gray02 {
+    background-color: var(--gray02)
+}
+.bg-red01 {
+    background-color: var(--red01)
+}
+
+
+/*BOOTSTRAP*/
+.btn {
+    background-color: var(--red01);
+    height: 3.5em;
+    padding-left: 1em !important;
+    border-radius: 5px;
+    color: var(--white01);
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+}
+.btn:focus {
+    box-shadow: none;
+}
+.btn:hover {
+    color: var(--white01);
+}
+
+
+/*CLASSES*/
+.addChannelForm {
+    width: 25%;
+}
+.statsContainer {
+    border-radius: 5px;
+}
+.statsContentContainer {
+    line-height: 2em;
+    word-break: break-all;
+}
+.statsContent01 {
+    font-size: 3em;
+    font-weight: 100;
+    max-height: 1em;
+    overflow: hidden;
+}
+.statsContent02 {
+    font-size: 1em;
+    font-weight: 100;
+    max-height: 1em;
+    overflow: hidden;
+}
+.statsLabel {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+/*IDs*/
+#loading {
+    width: 100%;
+    height: 90vh;
+}
+#searchSection {
+    display: none;
+}
+
+/*GENERAL*/
+a {
+    color: var(--white01);
+}
+a:hover {
+    color: var(--white01);
+    opacity: .5;
+    text-decoration: none;
+}
+input {
+    background-color: var(--black01);
+    height: 3.5em;
+    padding-left: 1em !important;
+    border: solid 3px var(--red01);
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: var(--gray01);
+}
+input:focus {
+    outline: none;
+}
+::placeholder {
+    font-weight: 300;
+    color: var(--gray01);
+}
+
+/*BOOTSTRAP MEDIA QUERIES*/
+@media (max-width: 991.98px) {
+    .addChannelForm {
+        width: 75%;
+    }
+}

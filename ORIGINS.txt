@@ -1,0 +1,3 @@
+AUTHOR: Al Bondad
+START DATE: July 6, 2019
+DESCRIPTION: This was a little project trying experimenting with the YouTube Data API, the Chart JS API, and experimenting with CSS unit elements. The goal was to create a basic live statistics viewer for YouTube channels.
