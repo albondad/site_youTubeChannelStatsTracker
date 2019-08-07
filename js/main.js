@@ -128,7 +128,7 @@ function loadClient() {
                 $("#searchSection").css({"display":"block"});
             },
             function(err) {
-                $("#loading").html("There was an error loadingm please try again.")
+                $("#loading").html("There was an error loading please try again.")
             });
 }
 function addChannelBy(searchFilter, input) {
