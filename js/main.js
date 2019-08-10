@@ -73,8 +73,8 @@ function displayStatistics(channel) {
         '<div class="container-fluid w-75">' +
             '<!--header-->' +
             '<div class="row bg-red01">' +
-                '<div class="col-md-12 col-lg-6 foSize-2em foColor-white01 foWeight-700 pt-2 pb-2">' + channel.username.toUpperCase() + '</div>' +
-                '<div class="col-md-12 col-lg-6 foSize-2em foColor-white01 text-right foWeight-100 pt-2 pb-2"><a class="" href="https://www.youtube.com/channel/' + channel.id + '" target="_blank">View Channel</a></div>' +
+                '<div class="col-md-12 col-lg-6 foSize-2em foColor-white01 text-center text-lg-left foWeight-700 pt-2 pb-2">' + channel.username.toUpperCase() + '</div>' +
+                '<div class="col-md-12 col-lg-6 foSize-2em foColor-white01 text-center text-lg-right foWeight-100 pt-2 pb-2"><a class="" href="https://www.youtube.com/channel/' + channel.id + '" target="_blank">View Channel</a></div>' +
             '</div>' +
             '<!--statistics-->' +
             '<div class="row bg-gray02 pt-2">' +
