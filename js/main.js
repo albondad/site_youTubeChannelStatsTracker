@@ -39,7 +39,7 @@ class Channel {
         //displays subscribers statistics
         $("#" + this.username + "_currentSubscriberCount").html(this.currentSubscriberCount.toLocaleString('en'));
         this.subscriberChart.data.labels = this.timeStamps;
-        console.logt(this.timeStamps);
+        console.log(this.timeStamps);
         this.subscriberChart.data.datasets[0].data = this.subscriberCounts;
         this.subscriberChart.update();
 
