@@ -27,6 +27,7 @@ class Channel {
 
     update(newStatistics) {
         //updates subscriber count
+        this.date = newDate();
         this.currentSubscriberCount = parseInt(newStatistics.statistics.subscriberCount, 10);
         this.subscriberCounts.push(this.currentSubscriberCount);
 
@@ -39,7 +40,6 @@ class Channel {
         //displays subscribers statistics
         $("#" + this.username + "_currentSubscriberCount").html(this.currentSubscriberCount.toLocaleString('en'));
         this.subscriberChart.data.labels = this.timeStamps;
-        console.log(this.timeStamps);
         this.subscriberChart.data.datasets[0].data = this.subscriberCounts;
         this.subscriberChart.update();
 
