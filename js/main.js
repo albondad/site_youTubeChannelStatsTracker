@@ -27,7 +27,7 @@ class Channel {
 
     update(newStatistics) {
         //updates subscriber count
-        this.date = newDate();
+        this.date = new Date();
         this.currentSubscriberCount = parseInt(newStatistics.statistics.subscriberCount, 10);
         this.subscriberCounts.push(this.currentSubscriberCount);
 
