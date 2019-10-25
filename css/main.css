@@ -11,11 +11,11 @@
 /*INITIAL*/
 :root {
     --white01: #FFFEFE;
-    --black01: #343434;
+    --black01: #061527;
     --black02: #212121;
     --gray01: #999999;
     --gray02: #3F3F3F;
-    --red01: #CC6666;
+    --red01: #E84747;
 }
 
 * {
@@ -23,11 +23,59 @@
     font-size: 1em;
 }
 
+/*ANIMATIONS*/
+.fading {
+    animation: fading 3s infinite;
+    -webkit-animation: fading 3s infinite;
+    -moz-animation: fading 3s infinite;
+    -ms-animation: fading 3s infinite;
+    -o-animation: fading 3s infinite;
+}
+@keyframes fading {
+    0% {opacity: .3;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    100% {opacity: .3;}
+}
+@-webkit-keyframes fading {
+    0% {opacity: .3;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    100% {opacity: .3;}
+}
+@-moz-keyframes fading {
+    0% {opacity: .3;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    100% {opacity: .3;}
+}
+@-o-keyframes fading {
+    0% {opacity: .3;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    100% {opacity: .3;}
+}
+
+/*WIDTH*/
+.w-100vw {
+    width: 100vw;
+}
+
 /*HEIGHT*/
+.h-100vh {
+    height: 100vh;
+}
+.h-75 {
+    height: 75%;
+}
 .h-10em {
     height: 5em;
 }
 
+/*MARGINS*/
+.m-75 {
+    margin: 75%;
+}
 
 /*FONTS*/
 /*font sizes*/
@@ -55,6 +103,12 @@
 .foSize-3em {
     font-size: 3em;
 }
+.foSize-4em {
+    font-size: 4em;
+}
+.foSize-8em {
+    font-size: 8em;
+}
 /*font weight*/
 .foWeight-100 {
     font-weight: 100;
@@ -72,6 +126,9 @@
 .foColor-white01 {
     color: var(--white01);
 }
+.foColor-black01 {
+    color: var(--black01);
+}
 .foColor-gray01 {
     color: var(--gray01);
 }
@@ -88,6 +145,9 @@
 }
 
 /*BACKGROUND COLORS*/
+.bg-white01 {
+    background-color: var(--white01)
+}
 .bg-black01 {
     background-color: var(--black01)
 }
@@ -110,17 +170,17 @@
     background-color: var(--red01);
     height: 3.5em;
     padding-left: 1em !important;
-    border-radius: 5px;
-    color: var(--white01);
+    border-radius: 0px;
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
+    transition: opacity .5s;
+}
+.btn:hover {
+    opacity: .5;
 }
 .btn:focus {
     box-shadow: none;
-}
-.btn:hover {
-    color: var(--white01);
 }
 
 
@@ -129,7 +189,7 @@
     width: 25%;
 }
 .statsContainer {
-    border-radius: 5px;
+    border: solid 8px var(--red01);
 }
 .statsContentContainer {
     line-height: 2em;
@@ -163,10 +223,11 @@
 
 /*GENERAL*/
 a {
-    color: var(--white01);
+    color: var(--black01);
+    transition: opacity .5s;
 }
 a:hover {
-    color: var(--white01);
+    color: var(--black01);
     opacity: .5;
     text-decoration: none;
 }
@@ -175,16 +236,16 @@ input {
     height: 3.5em;
     padding-left: 1em !important;
     border: solid 3px var(--red01);
-    border-radius: 5px;
     font-size: 1.5em;
-    color: var(--gray01);
+    color: var(--red01);
 }
 input:focus {
     outline: none;
+    color: var(--red01);
 }
 ::placeholder {
-    font-weight: 300;
-    color: var(--gray01);
+    font-weight: 100;
+    color: var(--red01);
 }
 
 /*BOOTSTRAP MEDIA QUERIES*/

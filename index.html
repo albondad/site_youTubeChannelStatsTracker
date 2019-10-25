@@ -16,24 +16,70 @@
 </head>
 
 <body class="bg-black01">
+    <!--LOADING SECTION-->
     <section class="p-0">
         <div id="loading" class="d-flex justify-content-center align-items-center foWeight-100 foSize-3em foColor-white01 p-0">
             LOADING...
         </div>
     </section>
+
+
+    <!--INTRO01 SECTION-->
+    <section id="intro01Section">
+        <div class="h-100vh bg-red01">
+            <div class="h-75 d-flex align-items-center justify-content-center">
+                <div class="d-lg-block d-none"> <!--for larger screens-->
+                    <div class="text-center foColor-white01 foSize-8em foWeight-700 lineh-1_25em">YOUTUBE LIVE STATS</div>
+                    <div class="text-center foColor-white01 foSize-3em lineh-1_25em">a simple tool to track your favorite channels</div>
+                </div>
+                <div class="d-lg-none d-xs-block"> <!--for smaller screens-->
+                    <div class="text-center foColor-white01 foSize-3em foWeight-700 lineh-1_25em">YOUTUBE LIVE STATS</div>
+                    <div class="text-center foColor-white01 foSize-2em lineh-1_25em">a simple tool to track your favorite channels</div>
+                </div>
+            </div>
+            <a href="#intro02Section"><div class="h-25 foSize-8em align-items-center justify-content-center foColor-white01 text-center fading">↓</div></a>
+        </div>
+    </section>
+
+
+    <!--INTRO02 SECTION-->
+    <section id="intro02Section">
+        <div class="h-100vh bg-white01">
+            <div class="w-75 h-75 d-flex align-items-center m-auto">
+                <div class="d-lg-block d-none"> <!--for larger screens-->
+                    <div class="foSize-2_5em foWeight-700 foColor-red01">DESCRIPTION</div>
+                    <div class="foSize-1_5em foColor-red01">YouTube Live Stats is a simple web application that makes use of tools such as the YouTube Data API and Chart.js to do a live tracking of YouTube channels, in a visually pleasing manner. </div>
+                    <div class="foSize-2_5em foWeight-700 foColor-red01 mt-5">FEATURES</div>
+                    <div class="foSize-1_5em foColor-red01">You can start adding channels as soon as possible using our custom built search feature. Search the channel by it's channel URL, channel username, or channel ID. Once you add a channel, a new tracking element will appear, allowing you to view simple information on the channel, along with a live subscriber count tracker. You can add as many channels create as many tracking elements as you want!</div>
+                    <div class="foSize-1em foColor-red01 mt-5">DISCLAIMER: As of August 2019, the YouTube API has changed the way they reported subscriber counts, rounding to the nearest thousands for all channels with over 1000 subscribers.</div>
+                </div>
+                <div class="d-lg-none d-xs-block"> <!--for smaller screens-->
+                    <div class="foSize-2em foWeight-700 foColor-red01">DESCRIPTION</div>
+                    <div class="foSize-1em foColor-red01">YouTube Live Stats is a simple web application that makes use of tools such as the YouTube Data API and Chart.js to do a live tracking of YouTube channels, in a visually pleasing method. </div>
+                    <div class="foSize-2em foWeight-700 foColor-red01 mt-5">FEATURES</div>
+                    <div class="foSize-1em foColor-red01">You can start adding channels as soon as possible using our custom built search feature. Search the channel by it's channel URL, channel username, or channel ID. Once you add a channel, a new tracking element will appear, allowing you to view simple information on the channel, along with a live subscriber count tracker. You can add as many channels create as many tracking elements as you want!</div>
+                    <div class="foSize-1em foColor-red01 mt-5">DISCLAIMER: as of August 2019, the YouTube API has changed the way they reported subscriber counts, rounding to the nearest thousands for all channels with over 1000 subscribers.</div>
+                </div>
+            </div>
+            <a href="#searchSection"><div class="h-25 foSize-8em align-items-center justify-content-center foColor-red01 text-center fading">↓</div></a>
+        </div>
+    </section>
+
+
     <!--SEARCH SECTION-->
     <section id="searchSection">
         <div class="mt-5 d-flex justify-content-center">
             <div class="container-fluid addChannelForm">
-                    <div class="row foColor-gray01 foSize-2em">ADD CHANNEL</div>
+                    <div class="row foColor-red01 foSize-2em">ADD CHANNEL</div>
                     <div class="row mt-3">
                         <div class="dropdown w-100">
-                            <button class="btn dropdown-toggle w-100 d-flex align-items-center" type="button" id="searchByFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Search By
-                                </button>
+                            <button id="btn_filter" class="btn dropdown-toggle w-100 d-flex align-items-center" type="button" id="searchByFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Search By URL
+                            </button>
                             <div class="dropdown-menu" aria-labelledby="searchByFilter">
-                                <a id="lnk_byChannelName" class="dropdown-item" href="#">By Channel Name</a>
-                                <a id="lnk_byChannelID" class="dropdown-item" href="#">By Channel ID</a>
+                                <a id="lnk_byChannelURL" class="dropdown-item foColor-black01" href="#btn_filter">By URL</a>
+                                <a id="lnk_byChannelName" class="dropdown-item foColor-black01" href="#btn_filter">By Name</a>
+                                <a id="lnk_byChannelID" class="dropdown-item foColor-black01" href="#btn_filter">By ID</a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +87,7 @@
                         <input id="inp_search" class="w-100" placeholder="channel name"></input>
                     </div>
                     <div class="row mt-3">
-                        <button id="btn_submit" class="btn w-100 d-flex justify-content-center">SUBMIT</button>
+                        <button id="btn_submit" class="btn w-100 d-flex justify-content-center foColor-black01">SUBMIT</button>
                     </div>
                     <div id="errors" class="row d-flex justify-content-center align-itmes-center mt-3 foColor-red01 foSize-1_5em">
                     </div>
