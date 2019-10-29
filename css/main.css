@@ -60,19 +60,36 @@
 .w-100vw {
     width: 100vw;
 }
-
 /*HEIGHT*/
-.h-100vh {
-    height: 100vh;
-}
-.h-75 {
-    height: 75%;
-}
 .h-10em {
     height: 5em;
 }
 .mh-100vh {
     min-height: 100vh;
+}
+.mh-90vh {
+    min-height: 90vh;
+}
+.mh-80vh {
+    min-height: 80vh;
+}
+.mh-70vh {
+    min-height: 70vh;
+}
+.mh-60vh {
+    min-height: 60vh;
+}
+.mh-50vh {
+    min-height: 50vh;
+}
+.mh-30vh {
+    min-height: 30vh;
+}
+.mh-20vh {
+    min-height: 20vh;
+}
+.mh-10vh {
+    min-height: 10vh;
 }
 /*MARGINS*/
 .m-75 {
