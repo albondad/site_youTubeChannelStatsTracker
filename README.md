@@ -8,4 +8,6 @@ jQuery - Transitions/Animations
 
 Bootstrap - Layout
 
+YouTube Data API - Data
+
 Netlify - Deployment
