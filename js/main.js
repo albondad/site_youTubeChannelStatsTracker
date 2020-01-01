@@ -98,7 +98,7 @@ function displayStatistics(channel) {
                 '</div>' +
                 '<div class="statsContentContainer col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-start foColor-red01 pt-5 text-center">' +
                     '<p>' +
-                        '<span class="statsLabel">DESCRIPTION</span>' +
+                        '<span class="statsLabel">COUNTRY</span>' +
                         '<br/>' +
                         '<span class="statsContent01">' + channel.country + '</span>' +
                     '</p>' +
