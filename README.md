@@ -6,8 +6,10 @@ IMPORTANT: As of August 2019, the YouTube API has changed the way they reported 
 # Tools
 jQuery - Transitions/Animations
 
-Bootstrap - Layout
-
 YouTube Data API - Data
+
+Chat.js - Data Visualization
+
+Bootstrap - Layout
 
 Netlify - Deployment
